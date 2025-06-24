@@ -1,2 +1,6 @@
 24/Jun/2025:13:10:40 +0000 "GET /service1/ping HTTP/1.1" 200
 24/Jun/2025:13:10:40 +0000 "GET /favicon.ico HTTP/1.1" 404
+24/Jun/2025:14:37:24 +0000 | 172.19.0.1 | "GET /service1/ping HTTP/1.1" | Status: 200 | Upstream: 172.19.0.3:8001 | Response Time: 0.005 | Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+24/Jun/2025:14:37:25 +0000 | 172.19.0.1 | "GET /favicon.ico HTTP/1.1" | Status: 404 | Upstream: - | Response Time: 0.000 | Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+24/Jun/2025:14:37:34 +0000 | 172.19.0.1 | "GET /service1/health HTTP/1.1" | Status: 200 | Upstream: 172.19.0.3:8001 | Response Time: 0.001 | Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+24/Jun/2025:14:37:43 +0000 | 172.19.0.1 | "GET /service2/health HTTP/1.1" | Status: 200 | Upstream: 172.19.0.2:8002 | Response Time: 0.004 | Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
