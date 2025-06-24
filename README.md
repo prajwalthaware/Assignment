@@ -41,7 +41,6 @@ Nginx Health Check
 
 # Clone the repository
 git clone (https://github.com/prajwalthaware/Assignment.git)
-cd devops-nginx-docker
 
 # Build and start services
 
