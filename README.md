@@ -119,6 +119,8 @@ curl http://13.232.219.85:8080/health
 
 🏗 Architecture Diagram (Text)
 
+
+```
 Client Request
      ↓
  AWS EC2 (Port 8080)
@@ -133,7 +135,7 @@ Client Request
  Go App       Python App
  (Port 8001)  (Port 8002)
 
- 
+```
 🛠 Tech Stack
 Layer	Tool/Technology
 Reverse Proxy	Nginx
