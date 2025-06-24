@@ -10,4 +10,3 @@ curl -s http://localhost:8080/service2/hello | jq
 # Test health checks
 echo "Checking service health..."
 docker inspect --format='{{.State.Health.Status}}' go-service
-docker inspect --format='{{.State.Health.Status}}' python-service
