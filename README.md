@@ -4,18 +4,7 @@ A hands-on DevOps project showcasing the use of Nginx as a reverse proxy to rout
 
 📁 Project Structure
 
-├── docker-compose.yml
-├── nginx/
-│   ├── nginx.conf
-│   └── Dockerfile
-├── service_1/
-│   ├── Dockerfile
-│   └── [Go application files]
-├── service_2/
-│   ├── Dockerfile
-│   └── [Python application files]
-├── test.sh
-└── README.md
+<pre lang="markdown"> ```text ├── docker-compose.yml ├── nginx/ │ ├── nginx.conf │ └── Dockerfile ├── service_1/ │ ├── Dockerfile │ └── [Go application files] ├── service_2/ │ ├── Dockerfile │ └── [Python application files] ├── test.sh └── README.md ``` </pre>
 
 🌐 Live Deployment
 Deployed on AWS EC2
