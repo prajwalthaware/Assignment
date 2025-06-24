@@ -1,9 +1,10 @@
 package main
 
 import (
-	"encoding/json"
-	"log"
-	"net/http"
+    "fmt"
+    "log"
+    "net/http"
+    "time"
 )
 
 func main() {
@@ -19,6 +20,12 @@ func main() {
 			"message": "Hello from Service 1",
 		})
 	})
+	// Health check endpoint
+    http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
+        w.Header().Set("Content-Type", "application/json")
+        w.WriteHeader(http.StatusOK)
+        fmt.Fprintf(w, `{"status": "healthy", "service": "go-service", "timestamp": "%s", "uptime": "running"}`, time.Now().Format(time.RFC3339))
+    })
 
 	log.Println("Service 1 listening on port 8001...")
 	if err := http.ListenAndServe(":8001", nil); err != nil {

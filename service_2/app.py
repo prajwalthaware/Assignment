@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-
+from datetime import datetime
 app = Flask(__name__)
 
 
@@ -11,6 +11,16 @@ def ping():
 @app.route("/hello")
 def hello():
     return jsonify(message="Hello from Service 2")
+
+
+@app.route('/health')
+def health():
+    return jsonify({
+        "status": "healthy",
+        "service": "python-service",
+        "timestamp": datetime.now().isoformat(),
+        "uptime": "running"
+    })
 
 
 if __name__ == "__main__":
